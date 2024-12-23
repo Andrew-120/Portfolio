@@ -1,0 +1,418 @@
+/*------------------ Global ------------------ */
+:root {
+  --light-black-color: rgba(27, 26, 26, 0.47);
+  --orange-color: rgb(255, 174, 0);
+  --gray-color: rgba(146, 143, 143, 0.477);
+  --black-color: rgba(0, 0, 0, 0.886);
+  --white-color: rgb(255, 255, 255);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+span {
+  color: var(--orange-color);
+  font-weight: bold;
+}
+.j-align{
+  text-align: justify;
+}
+
+/*------------------ Home Section ------------------ */
+#home {
+background-image: linear-gradient(
+    to right,
+    var(--light-black-color),
+    var(--light-black-color)
+),
+url(../images/bg.jpg);
+background-position: center center;
+background-size: cover;
+}
+#home .nav-logo {
+color: var(--orange-color);
+font-size: 1.875rem;
+font-weight: 700;
+letter-spacing: 0.4375rem;
+font-family: "Kanit", serif;
+font-weight: 800;
+}
+#home .nav-text {
+color: var(--white-color);
+font-size: 1.125rem;
+}
+#home .nav-text:hover {
+    color: var(--orange-color);
+}
+
+#home .caption h1 {
+font-size: 3.5rem;
+}
+#home .caption h1::after {
+content: "|";
+animation-name: typing;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+color: var(--orange-color);
+}
+@keyframes typing {
+    0% {
+      content: "|";
+    }
+    1.3% {
+      content: "F|";
+    }
+    2.6% {
+      content: "Fr|";
+    }
+    3.9% {
+      content: "Fro|";
+    }
+    5.2% {
+      content: "Fron|";
+    }
+    6.5% {
+      content: "Front|";
+    }
+    7.8% {
+      content: "Front-|";
+    }
+    9.1% {
+      content: "Front-E|";
+    }
+    10.4% {
+      content: "Front-En|";
+    }
+    11.7% {
+      content: "Front-End|";
+    }
+    13% {
+      content: "Front-End |";
+    }
+    14.3% {
+      content: "Front-End D|";
+    }
+    15.6% {
+      content: "Front-End De|";
+    }
+    16.9% {
+      content: "Front-End Dev|";
+    }
+    18.2% {
+      content: "Front-End Deve|";
+    }
+    19.5% {
+      content: "Front-End Devel|";
+    }
+    20.8% {
+      content: "Front-End Develo|";
+    }
+    22.1% {
+      content: "Front-End Develop|";
+    }
+    23.4% {
+      content: "Front-End Develope|";
+    }
+    24.7% {
+      content: "Front-End Developer|";
+    }
+    26% {
+      content: "Front-End Develope|";
+    }
+    27.3% {
+      content: "Front-End Develop|";
+    }
+    28.6% {
+      content: "Front-End Develo|";
+    }
+    29.9% {
+      content: "Front-End Devel|";
+    }
+    31.2% {
+      content: "Front-End Deve|";
+    }
+    32.5% {
+      content: "Front-End Dev|";
+    }
+    33.8% {
+      content: "Front-End De|";
+    }
+    35.1% {
+      content: "Front-End D|";
+    }
+    36.4% {
+      content: "Front-End |";
+    }
+    37.7% {
+      content: "Front-End|";
+    }
+    39% {
+      content: "Front-En|";
+    }
+    40% {
+      content: "Front-E|";
+    }
+    41.6% {
+      content: "Front-|";
+    }
+    42.9% {
+      content: "Front|";
+    }
+    44.2% {
+      content: "Fron|";
+    }
+    45.5% {
+      content: "Fro|";
+    }
+    46.8% {
+      content: "Fr|";
+    }
+    48.1% {
+      content: "F|";
+    }
+    49.4% {
+      content: "|";
+    }
+    50.7% {
+      content: "B|";
+    }
+    52% {
+      content: "Ba|";
+    }
+    53.3% {
+      content: "Bac|";
+    }
+    54.6% {
+      content: "Back|";
+    }
+    55.9% {
+      content: "Back-|";
+    }
+    57.2% {
+      content: "Back-E|";
+    }
+    58.5% {
+      content: "Back-En|";
+    }
+    59.8% {
+      content: "Back-End|";
+    }
+    61.1% {
+      content: "Back-End |";
+    }
+    62.4% {
+      content: "Back-End D|";
+    }
+    63.7% {
+      content: "Back-End De|";
+    }
+    65% {
+      content: "Back-End Dev|";
+    }
+    66.3% {
+      content: "Back-End Deve|";
+    }
+    67.6% {
+      content: "Back-End Devel|";
+    }
+    68.9% {
+      content: "Back-End Develo|";
+    }
+    70.2% {
+      content: "Back-End Develop|";
+    }
+    71.5% {
+      content: "Back-End Develope|";
+    }
+    72.8% {
+      content: "Back-End Deve|oper";
+    }
+    74.1% {
+      content: "Back-End Develope|";
+    }
+    75.4% {
+      content: "Back-End Develop|";
+    }
+    76.7% {
+      content: "Back-End Develo|";
+    }
+    78% {
+      content: "Back-End Devel|";
+    }
+    79.3% {
+      content: "Back-End Deve|";
+    }
+    80.6% {
+      content: "Back-End Dev|";
+    }
+    81.9% {
+      content: "Back-End De|";
+    }
+    83.2% {
+      content: "Back-End D|";
+    }
+    84.5% {
+      content: "Back-End |";
+    }
+    85.8% {
+      content: "Back-End|";
+    }
+    87.1% {
+      content: "Back-En|";
+    }
+    88.4% {
+      content: "Back-E|";
+    }
+    89.7% {
+      content: "Back-|";
+    }
+    91% {
+      content: "Back|";
+    }
+    92.3% {
+      content: "Bac|";
+    }
+    93.6% {
+      content: "Ba|";
+    }
+    94.9% {
+      content: "B|";
+    }
+    96.2% {
+      content: "|";
+    }
+}
+#home .caption p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 3.75rem;
+}
+  #home .caption a,
+  #home .caption a .fa-user {
+    color: var(--orange-color);
+}
+  #home .caption a .fa-user {
+    font-size: 1.6rem;
+}
+
+
+/*------------------ About Section ------------------ */
+#about .img-radius{
+  border-radius: .655rem;
+}
+#about .s-head{
+  font-size: 1.2rem;
+}
+#about a,
+#about .fa-eye {
+  color: var(--orange-color);
+}
+#about .fa-eye {
+  font-size: 1.3rem;
+}
+
+
+/*------------------ Contact Section ------------------ */
+#contact .f-btn,
+#about .fa-paper-plane {
+  color: var(--orange-color);
+}
+
+
+/*------------------ Footer Section ------------------ */
+footer{
+  background-color: var(--orange-color);
+}
+footer .social .fa-brands{
+  background-color: var(--black-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  padding: 1rem;
+}
+footer span{
+  color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------ Media Queries ------------------ */
+@media (min-width: 1024px) and (max-width: 1199px), (min-width: 1200px) {
+  /* Laptops and Extra Large Screens */
+  #home .caption .btn:hover{
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    cursor: pointer;
+  }
+  #home .caption .btn:hover .fa-user {
+    color: var(--white-color);
+  } 
+
+  #about .btn:hover{
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    cursor: pointer;
+  }
+  #about .btn:hover .fa-eye {
+    color: var(--white-color);
+  } 
+
+  #contact .f-btn:hover{
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    cursor: pointer;
+  }
+  #contact .f-btn:hover .fa-paper-plane {
+    color: var(--white-color);
+  } 
+
+  footer .social .fa-brands:hover{
+    background-color: rgba(200, 196, 196, 0.612);
+    color: var(--black-color);
+  }
+}
+
+@media (max-width: 768px) {
+    /* Tablets */
+    #home .caption h1 {
+      font-size: 2rem;
+    }
+    #home .caption p {
+      font-size: 1.35rem;
+      font-weight: 500;
+      line-height: 3.5rem;
+    }
+
+    footer .social .fa-brands {
+      border-radius: 45%;  
+      padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Mobile devices */
+    #home .caption h1 {
+      font-size: 1.7rem;
+    }
+    #home .caption p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 2.75rem;
+    }
+
+    footer .social .fa-brands {
+      border-radius: 45%;  
+      padding: 1rem; 
+    }
+}
